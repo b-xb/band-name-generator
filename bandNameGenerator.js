@@ -7,7 +7,7 @@ const bandName = {
   get adjective() { return this.getRandomItem(this._adjectives) },
   get noun() { return this.getRandomItem(this._nouns) },
   get preposition() { return this.getRandomItem(this._prepositions) },
-  get determiner() { return this.getRandomItem(this._determiner) },
+  get determiner() { return this.getRandomItem(this._determiners) },
 
   get descriptiveNoun() {
     let words = [];
