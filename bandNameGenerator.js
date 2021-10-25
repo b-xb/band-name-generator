@@ -1,22 +1,22 @@
 const bandName = {
-  _adjectives:["adjective"],
-  _determiners:["determiner"],
-  _nounsSingular:["singular noun"],
-  _nounsPlural:["plural noun"],
-  _prepositions:["preposition"],
+  _adjectives:["adjective 1","adjective 2"],
+  _determiners:["determiner 1","determiner 2",],
+  _nounsSingular:["singular noun 1","singular noun 2"],
+  _nounsPlural:["plural noun 1", "plural noun 2"],
+  _prepositions:["preposition 1", "preposition 2"],
 
-  get adjective() { return "word" },
-  get noun() { return "word" },
-  get nounSingular() { return "word" },
-  get nounPlural() { return "word" },
-  get preposition() { return "word" },
-  get determiner() { return "word" },
+  get adjective() { return this.getRandomItem(this._adjectives) },
+  get noun() { return this.getRandomItem(this._nounsSingular) },
+  get nounSingular() { return this.getRandomItem(this._nounsSingular) },
+  get nounPlural() { return this.getRandomItem(this._nounsPlural) },
+  get preposition() { return this.getRandomItem(this._prepositions) },
+  get determiner() { return this.getRandomItem(this._determiner) },
 
   generate() {
-    return "Band Name"; 
+    return "The "+ this.adjective + " " + this.noun; 
   },
   getRandomItem(array) {
-    return "word";
+    return array[Math.floor(Math.random() * array.length)];
   }
 }
 
