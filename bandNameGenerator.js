@@ -29,7 +29,22 @@ const bandName = {
   },
 
   generate() {
-    return this.descriptiveNoun;
+    let words = [];
+
+    let numberOfPrepositions = this.roll(0,1);
+    let numberOfDeterminers = this.roll(0,1);
+
+    words.push(this.descriptiveNoun);
+
+    if (numberOfPrepositions===1) {
+      words.push(this.preposition);
+      if (numberOfDeterminers===1) {
+        words.push(this.determiner);
+      }
+      words.push(this.descriptiveNoun);
+    }
+
+    return words.join(" ");
   },
   getRandomItem(array) {
     return array[this.getRandomNumber(array.length)];
