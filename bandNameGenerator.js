@@ -1,8 +1,8 @@
 const bandName = {
-  _adjectives:["adjective 1","adjective 2"],
-  _determiners:["determiner 1","determiner 2",],
-  _nouns:["singular noun 1","singular noun 2","plural noun 1", "plural noun 2"],
-  _prepositions:["preposition 1", "preposition 2"],
+  _adjectives:["Smelly","Yellow","Blue","Green","Maroon","Yummy","Rolling","Pink","Sunshine","Black","White","Stone","So","Solid","Red","Hot","Chilli","Terrible","Childish","East","Chemical","Stray","Smashing","Acid","Magic","Glowing","19","Velvet","Bonzo Dog","Doo-Dah","Rebel","Ice","Mr","Ms","Mrs","Mx","Grandmaster"],
+  _determiners:["a","the"],
+  _nouns:["Behemoth","Band","Star","Fur","Stone","Five","Stars","Stone","Stones","Hootie","Blowfish","Jackson","Jacksons","Floyd","Guns","Roses","Crew","Peppers","Year","Tears","Day","Boys","Girls","Beach","Spice","People","Stairs","17","Gambino","Brothers","Kids","Generation","Sabbath","Pumpkins","Rainbow","Mothers","Temple","Orchestra","Stripes","Banana","Splits","90s","Team","Underground","Motorcycle","Club","T","Flash","Fears"],
+  _prepositions:["and","with","under","for"],
 
   get adjective() { return this.getRandomItem(this._adjectives) },
   get noun() { return this.getRandomItem(this._nouns) },
