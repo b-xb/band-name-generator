@@ -10,6 +10,4 @@ Install [Node.js](https://nodejs.org/) and then run the following from the base 
 
 ## Project Status
 
-In progress.
-
-Currently only an outline for the code has been written.
+A basic version of the generator is complete
