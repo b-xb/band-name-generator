@@ -13,7 +13,25 @@ const bandName = {
   get determiner() { return this.getRandomItem(this._determiner) },
 
   generate() {
-    return "The "+ this.adjective + " " + this.noun; 
+    let roll = (bottom=0,top=0) => this.roll(bottom,top);
+    let output = "";
+
+    let random = roll(0,1);
+
+    if (random===1) {
+      random = roll(1,2);
+      for (let i=0;i<random;i++){
+        output += this.adjective + " ";
+      }
+    } else {
+      random = roll(0,2);
+      for (let i=0;i<random;i++){
+        output += this.adjective + " ";
+      }
+      output += this.noun;
+    }
+
+    return output;
   },
   getRandomItem(array) {
     return array[this.getRandomNumber(array.length)];
