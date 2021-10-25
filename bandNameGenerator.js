@@ -9,7 +9,7 @@ const bandName = {
   get preposition() { return this.getRandomItem(this._prepositions) },
   get determiner() { return this.getRandomItem(this._determiner) },
 
-  generate() {
+  get descriptiveNoun() {
     let words = [];
     let numberOfNouns = this.roll(0,2);
     let minAdjectives = numberOfNouns ? 0 : 1;
@@ -26,6 +26,10 @@ const bandName = {
     }
 
     return words.join(" ");
+  },
+
+  generate() {
+    return this.descriptiveNoun;
   },
   getRandomItem(array) {
     return array[this.getRandomNumber(array.length)];
