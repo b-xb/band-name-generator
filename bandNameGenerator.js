@@ -16,7 +16,19 @@ const bandName = {
     return "The "+ this.adjective + " " + this.noun; 
   },
   getRandomItem(array) {
-    return array[Math.floor(Math.random() * array.length)];
+    return array[this.getRandomNumber(array.length)];
+  },
+  getRandomNumber(i) {
+    if (i<0) i=0;
+    return Math.floor(Math.random() * i);
+  },
+  roll(bottom=0,top=0) {
+    if (bottom > top) {
+      let tmp = top;
+      let top = bottom;
+      let bottom = top;
+    }
+    return this.getRandomNumber((top-bottom)+1)+bottom;
   }
 }
 
