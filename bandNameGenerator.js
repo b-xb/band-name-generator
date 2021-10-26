@@ -1,6 +1,6 @@
 const bandName = {
   _adjectives:["Smelly","Yellow","Blue","Green","Maroon","Yummy","Rolling","Pink","Sunshine","Black","White","Stone","So","Solid","Red","Hot","Terrible","Childish","East","Chemical","Stray","Smashing","Acid","Magic","Glowing","19","Velvet","Bonzo Dog","Doo-Dah","Rebel","Ice","Mr","Ms","Mrs","Mx","Grandmaster","Wu-Tang","Dr.","Dope","Unknown","Mortal","Glass","Big","Super","Crystal","Furry","Washed"],
-  _determiners:["a","the"],
+  _determiners:["the"],
   _nouns:["Behemoth","Band","Star","Fur","Stone","Five","Stars","Stone","Stones","Hootie","Blowfish","Jackson","Jacksons","Floyd","Guns","Roses","Crew","Peppers","Year","Tears","Day","Boys","Girls","Beach","Spice","People","Stairs","17","Gambino","Brothers","Kids","Generation","Sabbath","Pumpkins","Rainbow","Mothers","Temple","Orchestra","Stripes","Banana","Splits","90s","Team","Underground","Motorcycle","Club","T","Flash","Fears","Clan","Doom","Lemon","Animals","Data","Organism","Castles","Out","Chilli","Village"],
   _prepositions:["and","with","under","for"],
 
